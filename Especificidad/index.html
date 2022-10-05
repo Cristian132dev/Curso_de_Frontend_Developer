@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Especificidad</title>
+</head>
+
+<body>
+   <!-- la especificidad es una solucion que implementa css para elegir un estilo que se contradice con otro, la tabla de especificidad es la siguiente
+   x  0  0  0  0 - !important
+      x  0  0  0 - estilos en linea html
+         x  0  0 - #id
+            x  0 - clases, pseudoclases
+               x - elementos, pseudoelementos
+               0 - *selector universal
+
+   estos se suman entre ellos, el que tenga mas valor sera usado en la pag
+
+   div.class p:nth-child(1)
+   0 0 2 - elementos
+   0 2 0 - clases
+   especificidad de 22
+   -->
+</body>
+
+</html>

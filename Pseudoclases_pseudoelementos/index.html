@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>PseudoClases y PseudoElementos</title>
+</head>
+
+<body>
+   <style>
+      /* PseudoClases */
+
+      h1:hover {
+         color: red;
+         text-decoration: underline;
+      }
+
+      .secondParent p:nth-child(2) {
+         color: brown
+      }
+
+      a:visited {
+         color: darkgreen;
+      }
+
+      /* PseudoElementos */
+      .secondParent p::first-letter {
+         font-size: 2rem;
+         color: purple;
+         font-style: oblique;
+      }
+
+      .secondParent p::after {
+         content: "✔";
+      }
+   </style>
+
+   <h1>Manoseame xD</h1>
+   <div>
+      <p>PseudoClases- (:)</p>
+      <p>PseudoElementos- (::)</p>
+   </div>
+
+   <div class="secondParent">
+      <p>Plaxi</p>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <p>Lorem, ipsum.</p>
+   </div>
+
+   <a href="https://developer.mozilla.org/es/docs/Web/CSS/:link" title="Documentacion Oficial">has click aqui</a>
+</body>
+
+</html>
