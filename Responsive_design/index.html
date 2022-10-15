@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Responsive Design</title>
+   <style>
+      div {
+         background-color: purple;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         color: lime;
+      }
+
+      /* los media queries son parametros de tamaño para la pagina, hasta el momento como estamos viendo Responsive Design veremos cambios en el tamaño de pantalla, por  ejemplo si la pantalla esta entre cierto tamaño a otro, se ejecutara el codigo dentro de los media queries */
+      @media (min-width: 400px) and (max-width: 900px) {
+         div {
+            background-color: red;
+         }
+      }
+
+      /* investigando por mi cuenta me he enterado que hay distintas propiedades como la altura */
+      @media (min-height: 400px){
+         body {
+            background-color: blue;
+         }
+      }
+
+      /* @media (max-width: 600px) {
+         div{
+            content: "la pagina mide menos de 600px";
+            background-color: grey;
+         }
+      } */
+
+      /* no se si me estoy impresionando lo suficiente, ahora sé como se crean las barras de navegacion, como formatean grid o flex en columna a row para moviles y viceversa, esto señores es la polla*/
+   </style>
+</head>
+<body>
+   <div>Platzi</div>
+</body>
+</html>

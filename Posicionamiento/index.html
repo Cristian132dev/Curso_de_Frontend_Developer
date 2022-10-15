@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Posicionamiento</title>
+   <style>
+      /*
+      position relative: no demuestra diferencia aparente pero permite ser posicionado donde queramos,   ademas si los hijos tienen un position absolute estos seran limitados por el tamaño del elemento relative mas cercano
+
+      position fixed: fija nuestro elemento donde le indiquemos en la pantalla, por lo tanto si tenemos un scroll este no perdera su sitio y se quedara fijo donde lo dejamos
+
+      Position sticky: el posicionamiento sticky quedara fijo en el punto que le indiquemos, siempre y cuando el scroll lo arrastre con el, por ello, el elemento se movera junto al scroll
+     */
+
+      * {
+         box-sizing: border-box;
+      }
+
+      .container {
+         width: 400px;
+         height: 400px;
+         background-color: peachpuff;
+
+         top: 50px;
+         position: relative;
+      }
+
+      .item {
+         width: 80px;
+         height: 80px;
+         background-color: hotpink;
+         position: absolute;
+         right: 0;
+      }
+
+      nav {
+         width: 100vw;
+         height: 30px;
+         background-color: powderblue;
+
+         position: fixed;
+      }
+
+      section article h2{
+         position: sticky;
+         top: 40px;
+
+      }
+   </style>
+</head>
+
+<body>
+   <nav>
+      <div>
+         soy una marca we
+      </div>
+   </nav>
+
+   <div class="container">
+      <div class="item">soy un item</div>
+   </div>
+
+   <p>
+      Enim Lorem amet proident ullamco quis commodo elit commodo. Ipsum nulla officia ex voluptate sit occaecat Lorem
+      officia ex. Incididunt id eu dolor non ex. Culpa fugiat minim magna do qui culpa quis mollit nostrud magna
+      commodo. Excepteur laboris laboris labore deserunt do enim occaecat labore minim. Aliqua amet minim et magna elit
+      Lorem laborum sint. Adipisicing labore aute veniam proident eu esse labore exercitation adipisicing ad.
+
+      Dolor culpa nostrud elit Lorem nostrud labore tempor deserunt cillum dolor ad ad ex. Ea mollit eiusmod elit sit
+      nisi nisi qui id excepteur eu elit. Sint proident quis fugiat ipsum nulla velit non officia nulla quis anim nulla
+      quis nulla.
+
+      Commodo laborum aute quis ullamco. Dolor sit elit labore qui occaecat eiusmod commodo fugiat enim elit mollit. Id
+      non velit magna dolor anim sit Lorem laboris ea. Excepteur reprehenderit ad velit eiusmod eiusmod ut aliqua nisi
+      esse aliquip. Enim ea in elit est aliqua quis officia quis adipisicing. Nisi ea mollit ullamco occaecat minim
+      consectetur ipsum.
+
+      Magna laborum cupidatat occaecat aliqua elit exercitation eu velit magna. Magna labore sunt mollit quis dolore qui
+      est exercitation cillum Lorem dolore irure fugiat. Sunt sunt incididunt in sint voluptate aute. Ad nisi laboris
+      reprehenderit non aute minim laboris officia veniam. Aliqua amet ullamco aliquip et aliqua.
+
+      Excepteur proident aliqua proident qui ex ad ut voluptate ex eu non exercitation aliqua. Deserunt do nostrud aute
+      do laboris tempor nulla aliquip sint id laboris sit nostrud qui. Irure veniam labore in esse reprehenderit ipsum
+      excepteur ullamco mollit eu anim anim fugiat. Incididunt cillum quis consectetur nulla ea aute id. Mollit esse
+      commodo Lorem eu velit sunt proident.
+
+      Ipsum sint dolore laborum deserunt Lorem sunt eiusmod et in ea. Ad labore magna tempor ad consectetur laboris anim
+      amet. Velit duis minim irure enim commodo commodo ut reprehenderit. Culpa et consequat aliquip cupidatat magna qui
+      sit incididunt duis nulla excepteur. Officia deserunt commodo anim laboris sunt duis est occaecat laborum magna
+      exercitation consequat. Do id enim ut esse commodo ut anim ex nostrud. Exercitation qui non in labore excepteur
+      velit aliquip sit nisi dolor aute culpa esse.
+   </p>
+   <section>
+      <h1>Noticias</h1>
+      <article>
+         <h2>cultura</h2>
+         <p>
+            Minim irure dolor nostrud nisi deserunt aute non. Nisi dolore officia aute velit pariatur consequat Lorem
+            mollit culpa aliquip. Consectetur enim minim anim labore quis.
+
+            Consectetur do duis incididunt fugiat magna eu deserunt et pariatur aliquip culpa consequat officia. Laborum
+            eu officia reprehenderit ut consectetur ad dolor dolore officia non magna officia adipisicing amet. Duis in
+            mollit duis anim officia Lorem in est velit magna esse commodo amet excepteur. Ex ut exercitation minim
+            ullamco incididunt laboris sint Lorem veniam esse id eiusmod id. Elit ut dolore dolor sit exercitation ad.
+         </p>
+      </article>
+
+      <article>
+         <h2>deportes</h2>
+         <p>
+            Ex laboris laboris aliqua irure sunt dolor voluptate nulla proident quis ad. Nulla minim enim ullamco minim
+            sunt quis voluptate tempor sint. Consequat duis irure Lorem tempor laboris dolore enim voluptate Lorem.
+            Nostrud ipsum ut enim enim ad laborum reprehenderit esse. Qui ipsum consequat cupidatat duis aliqua velit
+            enim deserunt aute tempor.
+
+            Et laborum aliqua sint non sint adipisicing qui incididunt ea nostrud eu. Cillum sit commodo reprehenderit
+            tempor et reprehenderit consequat esse tempor. Do est non nulla magna nulla ut ex. Officia ex cupidatat
+            veniam laboris consectetur pariatur nostrud laborum. Sunt exercitation ut sint do aliqua ea. Amet deserunt
+            cupidatat nulla laborum tempor quis quis mollit mollit do excepteur.
+         </p>
+      </article>
+
+      <article>
+         <h2>Moda</h2>
+         <p>
+            Enim eu non labore sint excepteur excepteur culpa dolore duis in laborum. Amet esse tempor voluptate tempor
+            ullamco minim eiusmod culpa reprehenderit anim deserunt non. Sint aliquip veniam consequat nostrud
+            reprehenderit duis esse consequat nulla proident labore sunt. Veniam sit consequat amet officia pariatur ut
+            in. Qui minim ipsum velit sint reprehenderit laboris aute magna ea officia fugiat. Pariatur laborum sunt
+            cupidatat tempor nisi.
+
+            Labore amet commodo amet elit aliqua id veniam culpa minim qui tempor ut amet velit. Amet eu nisi ea qui non
+            in pariatur. Ut ipsum irure tempor excepteur minim deserunt irure consectetur exercitation est id ea
+            voluptate proident. Eiusmod eiusmod proident dolor voluptate fugiat laborum sunt. Ut officia esse aute
+            dolore. Aliqua officia excepteur ut sint sit cupidatat in labore eiusmod nisi et ex aliquip.
+         </p>
+      </article>
+
+      <article>
+         <h2>Chismes</h2>
+         <p>
+            Voluptate duis Lorem nulla proident aliquip eiusmod occaecat do enim eiusmod consectetur. Proident ut
+            proident irure exercitation veniam cillum ullamco sint fugiat. Esse commodo do laboris magna ea.
+
+            Excepteur sit cillum quis aliquip duis proident sit aliquip commodo ex nostrud cillum. Aliqua eu ea Lorem
+            exercitation commodo anim incididunt nisi consequat culpa id ipsum. Sunt sint eiusmod esse exercitation
+            magna occaecat dolore qui Lorem ea. Tempor proident pariatur irure aliquip elit qui. Ex exercitation
+            deserunt qui est eiusmod reprehenderit esse deserunt nostrud. Enim incididunt quis aute do. Dolore dolore
+            exercitation id est ullamco aliqua pariatur ut labore sunt sit.
+         </p>
+      </article>
+   </section>
+</body>
+
+</html>

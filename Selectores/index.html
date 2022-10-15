@@ -11,7 +11,7 @@
 
 <body>
    <style>
-      div>.directo {
+      div ~ p {
          background-color: darkgrey;
          border: 1px solid black;
       }
@@ -20,7 +20,10 @@
 
    <!-- Descendientes (div .rojito) - todos los elementos hijos seran seleccionados -->
    <div>
-      <span class="rojito">A mi si me agarra 😁</span>
+      <article>
+         <p class="rojito">A mi si me agarra 😁</p>
+      </article>
+      <span class="rojito">A mi tambien me agarra 😃</span>
    </div>
 
    <span class="rojito">A mi no me agarra 😭 </span>
@@ -38,8 +41,13 @@
    <hr>
 
    <!-- Elemento adyacente (p + p) - selecciona el elemento que este debajo -->
+   <p>a mi nadie me selecciono 😭</p>
    <p>Seleccionare el elemento de abajo </p>
    <p>El elemento de arriba me selecciono 😕</p>
+   <div>
+      <p>a mi nfadie me selecciono 😭</p>
+   </div>
+   <p>a mi nadie me selecciono 😭</p>
    <hr>
 
    <!-- General de hermanos (div ~ p) - selecciona todos los elementos del mismo nivel -->
